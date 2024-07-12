@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 20px;
+}
+
+h1 {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.user-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #cc5200;
+  transform: scale(1.05);
+}
+
+.workflow-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px 80px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.workflow-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  padding: 20px 40px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ff7300;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: left;
+}
+
+.option:hover {
+  background-color: #ff8c1a;
+  transform: scale(1.03);
+}
+
+.option h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.option p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+
+.option button {
+  display: block; 
+  margin: 0 auto; 
+  background-color:white;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.option button:hover {
+  background: linear-gradient(135deg, #f1cfbb, #eed4c7); 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}

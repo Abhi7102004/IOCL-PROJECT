@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YWyGg708EyJcLsh2iEGvGL1eTst1ishCip0FTNHzmipooHqtU53N3fDLz--5SpSbnUI&usqp=CAU" alt="Indian Oil Logo" class="logo" />
+        </div>
+        <h1>Tender Document Management System</h1>
+        <div class="user-info">
+            <span class="username">
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon" class="user-icon" />
+                Shreya Jain
+            </span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="workflow-container">
+        <h2>Workflow Options</h2>
+        <div class="options-container">
+            <div class="option" onclick="navigateTo('create-new.html')">
+                <h3>Create New</h3>
+                <p>Start a new tender by filling in the necessary details and submitting for approval.</p>
+                <button>Go to Create New</button>
+            </div>
+            <div class="option" onclick="navigateTo('saved-draft.html')">
+                <h3>Saved Draft</h3>
+                <p>View and manage your tenders, edit drafts, and finalize them for submission.</p>
+                <button>Go to Saved Draft</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

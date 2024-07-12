@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Oil - Provisional Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YWyGg708EyJcLsh2iEGvGL1eTst1ishCip0FTNHzmipooHqtU53N3fDLz--5SpSbnUI&usqp=CAU" alt="Indian Oil Logo" class="logo">
+        </div>
+        <h1>Tender Management System</h1>
+        <div class="user-info">
+            <span class="username">
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon" class="user-icon">
+                Shreya Jain
+            </span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </header>
+    
+    <div id="dialogueContainer" class="formMain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YWyGg708EyJcLsh2iEGvGL1eTst1ishCip0FTNHzmipooHqtU53N3fDLz--5SpSbnUI&usqp=CAU" alt="Company Logo" class="company-logo">
+        <form id="dialogueForm">
+            <h1>BUDGETARY ESTIMATE</h1>
+            <div class="dialogue-inline">
+                <label for="dialogue1">Ref No:</label>
+                <input type="text" id="dialogue1" name="dialogue1" readonly>
+    
+                <label for="dialogue2">Section:</label>
+                <textarea id="dialogue2" name="dialogue2" readonly>Information Systems</textarea>
+    
+                <label for="dialogue3">Department:</label>
+                <textarea id="dialogue3" name="dialogue3" readonly>Information Technology</textarea>
+    
+                <label for="dialogue4">Location:</label>
+                <textarea id="dialogue4" name="dialogue4" readonly>Uttar Pradesh</textarea>
+            </div>
+    
+            <div class="dialogue-box">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+    
+            <div class="dialogue-box">
+                <label for="dialogue5">Subject:</label>
+                <textarea id="dialogue5" name="dialogue5">Default</textarea>
+            </div>
+    
+            <div class="dialogue-box">
+                <label for="dialogue6">Background:</label>
+                <textarea id="dialogue6" name="dialogue6">Default</textarea>
+            </div>
+    
+            <div class="dialogue-box">
+                <label for="dialogue7">Proposal:</label>
+                <textarea id="dialogue7" name="dialogue7">Default</textarea>
+            </div>
+    
+            <div class="dialogue-box">
+                <label for="dialogue8">Conclusion:</label>
+                <textarea id="dialogue8" name="dialogue8">Default</textarea>
+            </div>
+    
+            <div class="dialogue-box">
+                <label>Confidential:</label>
+                <label><input type="radio" name="confidential" value="Yes" checked> Yes</label>
+                <label><input type="radio" name="confidential" value="No"> No</label>
+            </div>
+    
+            <div class="wrap">
+                <button type="button" id="saveBtn">Save as PDF</button>
+            </div>
+            <p id="saveMessage" class="hidden">Information saved</p>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="budgetaryEstimateForm.js"></script>
+</body>
+</html>

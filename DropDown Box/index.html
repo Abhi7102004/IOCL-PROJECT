@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Box Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YWyGg708EyJcLsh2iEGvGL1eTst1ishCip0FTNHzmipooHqtU53N3fDLz--5SpSbnUI&usqp=CAU" alt="Indian Oil Logo" class="logo">
+        </div>
+        <h1>Tender Document Management System</h1>
+        <div class="user-info">
+            <span class="username">
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon" class="user-icon">
+                ShreyaJain
+            </span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </header>
+    <main>
+        <h2>CREATE NEW</h2>
+        <div class="custom-dropdown">
+            <label for="options">Choose an option:</label>
+            <div class="dropdown">
+                <button id="dropdown-btn" class="dropbtn">Select an option</button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="#" data-value="option1">IN-PRINCIPLE APPROVAL</a>
+                    <a href="#" data-value="option2">BUDGETARY ESTIMATE</a>
+                    <a href="#" data-value="option3">ADMINISTRATIVE APPROVAL</a>
+                    <a href="#" data-value="option4">TCC INTERMEDIATE</a>
+                    <a href="#" data-value="option5">TCC FINAL NOTE</a>
+                </div>
+            </div>
+        </div>
+        <button id="submit-btn">Submit</button>
+        <p id="selected-option"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
